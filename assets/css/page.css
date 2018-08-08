@@ -1,0 +1,378 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.header .topnav-wrap {
+  position: relative;
+  z-index: 2;
+}
+.header .topnav-wrap .topnav {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  padding: 0 20px;
+  z-index: 2;
+  color: #fff;
+  transition: all 0.4s;
+}
+.header .topnav-wrap .topnav .top-logo {
+  position: absolute;
+  top: 30px;
+  left: 22px;
+}
+.header .topnav-wrap .topnav .top-logo a {
+  display: block;
+  width: 140px;
+  height: 62px;
+  background: url("../images/logo.png") no-repeat center;
+}
+.header .topnav-wrap .topnav .navlist {
+  position: relative;
+  float: right;
+  font-size: 0;
+  line-height: 2;
+}
+.header .topnav-wrap .topnav .navlist li {
+  display: inline-block;
+  padding: 44px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.header .topnav-wrap .topnav .navlist li .nav-btn-tit {
+  position: relative;
+  z-index: 2;
+}
+.header .topnav-wrap .topnav .navlist li .nav-btn-bg {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  background-color: #d70000;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.header .topnav-wrap .topnav .navlist li.on a {
+  color: #fff;
+}
+.header .topnav-wrap .topnav .navlist li.on .nav-btn-bg {
+  opacity: 1;
+  top: 0;
+}
+.header .topnav-wrap .topnav-bg {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  filter: alpha(opacity=20);
+  opacity: 0.5;
+  -webkit-transition: all ease-in 250ms;
+  transition: all ease-in 250ms;
+  z-index: 1;
+}
+.header .nav-content-wrap {
+  position: relative;
+}
+.header .nav-content-wrap .nav-content {
+  position: absolute;
+  top: -320px;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  z-index: 1;
+  color: #404040;
+  background-color: #f2f0f0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.5s;
+}
+.header .nav-content-wrap .nav-content.on {
+  top: 0px;
+  opacity: 1;
+}
+.header .nav-content-wrap .nav-content .nav-content-bg {
+  width: 800px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.header .nav-content-wrap .nav-content .nav-content-bg img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+.header .nav-content-wrap .nav-content .nav-content-list {
+  z-index: 2;
+  width: 24%;
+  min-width: 235px;
+  background-color: #f2f0f0;
+  height: 100%;
+  /* padding-left: 50px; */
+  /* padding-top: 10px; */
+  position: relative;
+  float: left;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-content-ls-tit {
+  color: #5f636a;
+  font-size: 24px;
+  padding: 30px 0 20px 50px;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-cont-items {
+  position: relative;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-cont-items .nav-cont-item {
+  font-size: 16px;
+  color: #5f636a;
+  height: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-cont-items .nav-cont-item > p {
+  line-height: 50px;
+  padding-left: 50px;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-cont-items .nav-cont-item > p i {
+  border-left: #d5000f solid 2px;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.header .nav-content-wrap .nav-content .nav-content-list .nav-cont-items .nav-cont-item > p span {
+  padding-left: 10px;
+}
+.header.over .topnav-bg {
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #d5000f;
+  background-color: #e8e8ea;
+}
+.footer .footer-content {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto 30px;
+  padding-top: 55px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .footer-content .footer-column {
+  width: 20%;
+  flex-shrink: 0;
+}
+.footer .footer-content .footer-column .ft-nav-list .ft-nav-tit {
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 0;
+  font-weight: bold;
+}
+.footer .footer-content .footer-column .ft-nav-list .ft-nav-items {
+  margin-top: 10px;
+}
+.footer .footer-content .footer-column .ft-nav-list .ft-nav-items > li {
+  margin-bottom: 3px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.footer .footer-content .footer-row {
+  position: relative;
+  width: 100%;
+}
+.footer .footer-content .footer-row .contact-tit {
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.footer .footer-content .footer-row p {
+  font-size: 16px;
+}
+.footer .footer-content .footer-row .social-medias {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer .footer-btm {
+  text-align: center;
+  border-top: #ccc solid 1px;
+  padding: 40px 30px;
+}
+.footer .footer-btm .bottom-logo {
+  display: inline-block;
+  width: 135px;
+  height: 41px;
+  background: url("../images/logo.png") no-repeat;
+}
+
+body {
+  color: #4c4948;
+}
+
+a {
+  cursor: pointer;
+}
+
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  width: 130px;
+  background: #fff;
+}
+
+.more-btn i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/allicon.png") no-repeat;
+  background-position: -423px -245px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.cont-text {
+  font-size: 16px;
+  line-height: 25px;
+  white-space: pre-line;
+}
+
+.body {
+  background-repeat: no-repeat;
+  background-size: auto 835px;
+}
+.body .page {
+  width: 1208px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.body .page .page-title {
+  font-size: 58px;
+  font-weight: normal;
+  color: #4c4948;
+  margin-top: 228px;
+  margin-left: 30px;
+  margin-bottom: 223px;
+}
+.body .page .page-main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 70px;
+  overflow: hidden;
+}
+.body .page .page-main .side-bar {
+  float: left;
+}
+.body .page .page-main .side-bar > h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  line-height: 1;
+}
+.body .page .page-main .side-bar .side-nav {
+  margin-left: 10px;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item {
+  border-left: 5px solid #333;
+  margin-bottom: 22px;
+  position: relative;
+  width: 100px;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item > a {
+  margin-left: 10px;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item.active {
+  border-color: #D01217;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item.active > a {
+  color: #D01217;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item:hover .sub-nav {
+  display: block;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item .sub-nav {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 130px;
+  display: none;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item .sub-nav .sub-nav-item > a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item .sub-nav .sub-nav-item.active > a {
+  color: #D01217;
+}
+.body .page .page-main .side-bar .side-nav .side-nav-item .sub-nav .sub-nav-item:last-of-type a {
+  border-bottom: none;
+}
+.body .page .page-main .side-nav-conts {
+  margin-left: 390px;
+}
+.body .page .page-main .side-nav-conts .side-nav-content {
+  display: none;
+}
+.body .page .page-main .side-nav-conts .side-nav-content > h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  line-height: 1;
+}
+.body .page .page-main .side-nav-conts .side-nav-content.active {
+  display: block;
+}
+.body .page .page-main .side-nav-conts .side-nav-content .side-nav-sub-content {
+  display: none;
+  margin-top: 50px;
+}
+.body .page .page-main .side-nav-conts .side-nav-content .side-nav-sub-content.active {
+  display: block;
+}
+.body.zyrd {
+  background-image: url("../images/zyrd.png");
+}
+.body.gyzc {
+  background-image: url("../images/gyzc.png");
+}
+.body.jrzc {
+  background-image: url("../images/jrzc.png");
+}
+.body.mtzx {
+  background-image: url("../images/mtzx.png");
+}
+.body.rdkb {
+  background-image: url("../images/rdkb.png");
+}
+.body.zrzc {
+  background-image: url("../images/zrzc.png");
+}
+.body.jqxm {
+  background-image: url("../images/jqxm.png");
+}
+
+/*# sourceMappingURL=page.css.map */

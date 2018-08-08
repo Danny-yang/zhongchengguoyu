@@ -1,0 +1,43 @@
+@import 'header';
+@import 'footer';
+
+body {
+    color: #4c4948;
+}
+
+a {
+    cursor: pointer;
+}
+
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    width: 130px;
+    background: #fff;
+}
+
+.more-btn {
+    i {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url('../images/allicon.png') no-repeat;
+        background-position: -423px -245px;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.cont-text {
+    font-size: 16px;
+    line-height: 25px;
+    white-space: pre-line;
+}

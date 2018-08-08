@@ -1,0 +1,155 @@
+@import '../common';
+
+.body {
+
+	background-repeat: no-repeat;
+	background-size: auto 835px;
+
+	.page {
+		width: 1208px;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.page-title {
+			font-size: 58px;
+			font-weight: normal;
+			color: #4c4948;
+			margin-top: 228px;
+			margin-left: 30px;
+			margin-bottom: 223px;
+		}
+
+		.page-main {
+			background-color: rgba(255,255,255,.5);
+			padding: 70px;
+			overflow: hidden;
+
+			.side-bar {
+				float: left;
+
+				>h3 {
+					font-size: 24px;
+					margin-bottom: 30px;
+					margin-top: 0;
+					line-height: 1;
+				}
+
+				.side-nav {
+					margin-left: 10px;
+
+					.side-nav-item {
+						border-left: 5px solid #333;
+						margin-bottom: 22px;
+						position: relative;
+						width: 100px;
+
+						> a {
+							margin-left: 10px;
+						}
+
+						&.active {
+							border-color: #D01217;
+
+							> a {
+								color: #D01217;								
+							}
+						}
+
+						&:hover {
+							.sub-nav {
+								display: block;
+							}
+						}
+
+						.sub-nav {
+							position: absolute;
+							top: 0;
+							left: 90px;
+							width: 130px;
+							display: none;
+
+							.sub-nav-item {
+								> a {
+									display: block;
+									height: 36px;
+									line-height: 36px;
+									text-align: center;
+									background: #fff;
+									border-bottom: 1px solid #ddd;
+
+								}
+
+								&.active {
+									> a {
+										color: #D01217;
+									}
+								}
+
+
+								&:last-of-type a {
+									border-bottom: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.side-nav-conts {
+				margin-left: 390px;
+
+				.side-nav-content {
+					display: none;
+
+					> h3 {
+						font-size: 32px;
+						margin-bottom: 30px;
+						margin-top: 0;
+						line-height: 1;
+					}
+
+					&.active {
+						display: block;
+					}
+
+					.side-nav-sub-content {
+						display: none;
+						margin-top: 50px;
+
+						&.active {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.zyrd {
+		background-image: url('../images/zyrd.png');
+	}
+
+	&.gyzc {
+		background-image: url('../images/gyzc.png');
+	}
+
+	&.jrzc {
+		background-image: url('../images/jrzc.png');
+	}
+
+	&.mtzx {
+		background-image: url('../images/mtzx.png');
+	}
+
+	&.rdkb {
+		background-image: url('../images/rdkb.png');
+	}
+
+	&.zrzc {
+		background-image: url('../images/zrzc.png');
+	}
+
+	&.jqxm {
+		background-image: url('../images/jqxm.png');
+	}
+}

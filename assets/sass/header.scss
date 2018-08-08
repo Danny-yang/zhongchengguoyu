@@ -1,0 +1,189 @@
+.header {
+	// background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+
+	.topnav-wrap {
+		position: relative;
+    	z-index: 2;
+
+		.topnav {
+		    position: relative;
+		    height: 120px;
+		    overflow: hidden;
+		    padding: 0 20px;
+		    z-index: 2;
+		    color: #fff;
+		    transition: all .4s;
+    
+			.top-logo {
+				position: absolute;
+				top: 30px;
+				left: 22px;
+
+				a {
+					display: block;
+					width: 140px;
+					height: 62px;
+					background: url('../images/logo.png') no-repeat center;
+				}
+			}
+
+			.navlist {
+				position: relative;
+			    float: right;
+			    font-size: 0;
+			    line-height: 2;
+
+				li {
+					display: inline-block;
+				    padding: 44px 12px;
+				    font-size: 16px;
+				    cursor: pointer;
+				    position: relative;
+				    overflow: hidden;
+				    transition: all .4s;
+
+                    .nav-btn-tit {
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    .nav-btn-bg {
+                        position: absolute;
+                        top: 120px;
+                        left: 0;
+                        width: 100%;
+                        height: 120px;
+                        z-index: 1;
+                        background-color: #d70000;
+                        opacity: 0;
+                        transition: all 0.3s;
+                    }
+
+                    &.on {
+                        a {
+                            color: #fff;
+                        }
+
+                        .nav-btn-bg {
+                            opacity: 1;
+                            top: 0;
+                        }
+                    }
+				}
+			}
+		}
+
+		.topnav-bg {
+		    position: absolute;
+		    background: #fff;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+		    filter: alpha(opacity=20);
+		    opacity: .5;
+		    -webkit-transition: all ease-in 250ms;
+		    transition: all ease-in 250ms;
+		    z-index: 1;
+		}
+	}
+
+	.nav-content-wrap {
+		position: relative;
+
+		.nav-content {
+		    position: absolute;
+		    top: -320px;
+		    left: 0;
+		    width: 100%;
+		    height: 340px;
+		    overflow: hidden;
+		    z-index: 1;
+		    color: #404040;
+		    background-color: #f2f0f0;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		    transition: all 0.5s;
+
+		    &.on {
+		    	top: 0px;
+    			opacity: 1;
+		    }
+
+		    .nav-content-bg {
+				width: 800px;
+			    height: 100%;
+			    float: left;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                    margin: 0 auto;
+                }
+		    }
+
+            .nav-content-list {
+                z-index: 2;
+                width: 24%;
+                min-width: 235px;
+                background-color: #f2f0f0;
+                height: 100%;
+                /* padding-left: 50px; */
+                /* padding-top: 10px; */
+                position: relative;
+                float: left;
+
+                .nav-content-ls-tit {
+                    color: #5f636a;
+                    font-size: 24px;
+                    padding: 30px 0 20px 50px;
+                }
+
+                .nav-cont-items {
+                    position: relative;
+
+                    .nav-cont-item {
+                        font-size: 16px;
+                        color: #5f636a;
+                        height: 50px;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        z-index: 2;
+                        position: relative;
+
+                        > p {
+                            line-height: 50px;
+                            padding-left: 50px;
+
+                            i {
+                                border-left: #d5000f solid 2px;
+                                font-size: 12px;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                            }
+
+                            span {
+                                // background: url(../../images/zx/bus-nav-icon02.png) no-repeat;
+                                // background-position: left center;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }   
+            }
+		}
+	}
+
+    &.over {
+        .topnav-bg {
+            opacity: 1;
+        }
+    }
+}
