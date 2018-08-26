@@ -1,0 +1,26 @@
+{
+  "name": "zhongchengguoyu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "koa": "^2.5.2",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danny-yang/zhongchengguoyu.git"
+  },
+  "author": "Danny Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danny-yang/zhongchengguoyu/issues"
+  },
+  "homepage": "https://github.com/Danny-yang/zhongchengguoyu#readme"
+}
