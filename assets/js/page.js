@@ -1,3 +1,12 @@
+var query = location.search.substr(1);
+
+if (query) {
+	$('.side-nav-item.active').removeClass('active');
+	$('.side-nav-item.' + query).addClass('active');
+	$('.side-nav-content.active').removeClass('active');
+	$('.side-nav-content.' + query).addClass('active');
+}
+
 $('.side-nav-item').on('click', function(e) {
 	$('.side-nav-item').removeClass('active');
 	$(this).addClass('active');
