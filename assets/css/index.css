@@ -211,12 +211,26 @@
   text-align: center;
   border-top: #ccc solid 1px;
   padding: 40px 30px;
+  position: relative;
 }
 .footer .footer-btm .bottom-logo {
   display: inline-block;
   width: 135px;
   height: 41px;
   background: url("../images/logo.png") no-repeat;
+}
+.footer .footer-btm .company-record {
+  display: block;
+  text-align: center;
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+.footer .footer-btm .pic-from {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  padding-right: 30px;
 }
 
 body {
@@ -358,6 +372,19 @@ td {
 .section .fp-tableCell .section-content .section-cont-box .section-box-img .section-box-txt .main-tit {
   font-size: 35px;
   color: #fff;
+}
+.section .fp-tableCell .section-content .section-cont-box .section-box-img .section-box-txt .more-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+.section .fp-tableCell .section-content .section-cont-box .section-box-img .section-box-txt .more-btn a {
+  color: #fff;
+}
+.section .fp-tableCell .section-content .section-cont-box .section-box-img .section-box-txt .more-btn a > i {
+  background: url("../images/arrow-right.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .section .fp-tableCell .section-content .section-content-item {
   position: absolute;

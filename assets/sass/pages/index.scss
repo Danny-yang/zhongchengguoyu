@@ -106,9 +106,24 @@
                         padding: 16px 35px;
 
                         .main-tit {
-
                             font-size: 35px;
                             color: #fff;
+                        }
+
+                        .more-btn {
+                            position: absolute;
+                            right: 20px;
+                            bottom: 15px;
+
+                            a {
+                                color: #fff;
+
+                                > i {
+                                    background: url('../images/arrow-right.png') no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                            }
                         }
                     }
                 }

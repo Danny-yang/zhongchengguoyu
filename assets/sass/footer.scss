@@ -63,12 +63,26 @@
         text-align: center;
         border-top: #ccc solid 1px;
         padding: 40px 30px;
+        position: relative;
 
         .bottom-logo {
             display: inline-block;
             width: 135px;
             height: 41px;
             background: url('../images/logo.png') no-repeat;
+        }
+
+        .company-record {
+            display: block;
+            text-align: center;
+            color: #b3b3b3;
+            margin-top: 5px;
+        }
+
+        .pic-from {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
         }
     }
 }

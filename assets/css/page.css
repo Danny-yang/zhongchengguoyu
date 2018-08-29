@@ -211,12 +211,26 @@
   text-align: center;
   border-top: #ccc solid 1px;
   padding: 40px 30px;
+  position: relative;
 }
 .footer .footer-btm .bottom-logo {
   display: inline-block;
   width: 135px;
   height: 41px;
   background: url("../images/logo.png") no-repeat;
+}
+.footer .footer-btm .company-record {
+  display: block;
+  text-align: center;
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+.footer .footer-btm .pic-from {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  padding-right: 30px;
 }
 
 body {
@@ -354,25 +368,25 @@ td {
   display: block;
 }
 .body.zyrd {
-  background-image: url("../images/zyrd.png");
+  background-image: url("../images/zyrd.jpg");
 }
 .body.gyzc {
-  background-image: url("../images/gyzc.png");
+  background-image: url("../images/gyzc.jpg");
 }
 .body.jrzc {
-  background-image: url("../images/jrzc.png");
+  background-image: url("../images/jrzc.jpg");
 }
 .body.mtzx {
-  background-image: url("../images/mtzx.png");
+  background-image: url("../images/mtzx.jpg");
 }
 .body.rdkb {
-  background-image: url("../images/rdkb.png");
+  background-image: url("../images/rdkb.jpg");
 }
 .body.zrzc {
-  background-image: url("../images/zrzc.png");
+  background-image: url("../images/zrzc.jpg");
 }
 .body.jqxm {
-  background-image: url("../images/jqxm.png");
+  background-image: url("../images/jqxm.jpg");
 }
 
 /*# sourceMappingURL=page.css.map */
